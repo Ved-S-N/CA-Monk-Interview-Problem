@@ -162,9 +162,11 @@ http://localhost:5173
 
 ### Author
 
+```
+
 Ved S N
 GitHub: https://github.com/Ved-S-N
 
-```
+
 
 ```
