@@ -43,7 +43,7 @@ export default function BlogDetail({ blogId }: Props) {
   }
 
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-white overflow-hidden shadow-sm">
+    <div className="rounded-2xl border border-zinc-200 bg-white overflow-hidden no-scrollbar shadow-sm">
       <img
         src={data.coverImage}
         alt={data.title}

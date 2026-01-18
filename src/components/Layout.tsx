@@ -1,21 +1,3 @@
-// import type { ReactNode } from "react";
-
-// export default function Layout({
-//   left,
-//   right,
-// }: {
-//   left: ReactNode;
-//   right: ReactNode;
-// }) {
-//   return (
-//     <div className="min-h-screen bg-zinc-950 text-zinc-100 p-4 sm:p-6">
-//       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-//         <div className="lg:col-span-1 space-y-6">{left}</div>
-//         <div className="lg:col-span-2">{right}</div>
-//       </div>
-//     </div>
-//   );
-// }
 import type { ReactNode } from "react";
 
 export default function Layout({
@@ -78,14 +60,14 @@ export default function Layout({
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* LEFT */}
           <aside className="md:col-span-1">
-            <div className="sticky top-6 h-[calc(100vh-220px)] overflow-y-auto pr-2 space-y-6">
+            <div className="sticky top-6 h-[calc(100vh-220px)] overflow-y-auto no-scrollbar pr-2 space-y-6">
               {left}
             </div>
           </aside>
 
           {/* RIGHT */}
           <section className="md:col-span-2">
-            <div className="sticky top-6 h-[calc(100vh-220px)] overflow-y-auto pr-2">
+            <div className="sticky top-6 no-scrollbar h-[calc(100vh-220px)] overflow-y-auto pr-2">
               {right}
             </div>
           </section>
