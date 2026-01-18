@@ -128,23 +128,33 @@ index.css
 git clone <repository-url>
 cd camonk-interview
 
-2) Install dependencies
-npm install
+```
 
-3) Start JSON Server (Backend API)
+### 2) Install dependencies
+
+```
+npm install
+```
+
+3. Start JSON Server (Backend API)
+
+```
 npm run server
 
+```
 
 Backend runs on:
 
 http://localhost:3001
 
-4) Start the Development Server (Frontend)
+4. Start the Development Server (Frontend)
 
 Open another terminal and run:
 
+```
 npm run dev
 
+```
 
 Frontend runs on:
 
@@ -154,4 +164,7 @@ Author
 
 Ved S N
 GitHub: https://github.com/Ved-S-N
+
+```
+
 ```
