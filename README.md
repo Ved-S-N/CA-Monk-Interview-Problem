@@ -60,6 +60,16 @@ It demonstrates a modern React application using **TypeScript**, **TanStack Quer
 
 ---
 
+### ✅ Create Blog (via Navbar Button)
+
+- A **“+ Create Blog”** button is available in the top navigation bar.
+- Clicking it opens a **shadcn/ui Sheet (slide-over panel)** containing the Create Blog form.
+- On successful submission:
+  ✅ Blog is created using `POST /blogs`  
+  ✅ Blog list refreshes automatically using TanStack Query `invalidateQueries(["blogs"])`
+
+---
+
 ## 🎨 UI / UX Enhancements
 
 - Clean layout inspired by reference design:
@@ -162,11 +172,5 @@ http://localhost:5173
 
 ### Author
 
-```
-
 Ved S N
 GitHub: https://github.com/Ved-S-N
-
-
-
-```
