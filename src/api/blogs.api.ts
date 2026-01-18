@@ -1,0 +1,27 @@
+import type { Blog, CreateBlogPayload } from "../types/blog";
+import { API_BASE_URL } from "./http";
+
+export async function fetchBlogs(): Promise<Blog[]> {
+  const res = await fetch(`${API_BASE_URL}/blogs`);
+  if (!res.ok) throw new Error("Failed to fetch blogs");
+  return res.json();
+}
+
+export async function fetchBlogById(id: number): Promise<Blog> {
+  const res = await fetch(`${API_BASE_URL}/blogs/${id}`);
+  if (!res.ok) throw new Error("Failed to fetch blog");
+  return res.json();
+}
+
+export async function createBlog(payload: CreateBlogPayload): Promise<Blog> {
+  const res = await fetch(`${API_BASE_URL}/blogs`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+
+  if (!res.ok) throw new Error("Failed to create blog");
+  return res.json();
+}
